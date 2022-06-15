@@ -156,7 +156,8 @@ site-nav .link:focus {
 .icon-contakt {
    fill: currentColor;
 }
-.item:hover .a {
+.item:hover .a ,
+.item:focus .a {
     color:var(--accent-color);
 }
 
@@ -643,5 +644,17 @@ border-radius: 50%;
     min-height: 581px;
     min-width: 528px;
 
+    background: #FFFFFF;
+}
+.close {
+    position: absolute;
+    margin-top: 8px;
+    margin-bottom: 765px;
+    margin-right: 8px;
+    margin-left: 490px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
 }

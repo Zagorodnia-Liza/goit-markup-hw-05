@@ -109,9 +109,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -174,15 +172,15 @@ site-nav .link:focus {
     margin-right: 10px;
     color : var(--second-color-text);
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-contakt {
    fill: currentColor;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+.a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item:hover .a ,
 .item:focus .a {
@@ -247,9 +245,7 @@ site-nav .link:focus {
     font-size: 16px;
     line-height: 1.8;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -423,15 +419,13 @@ site-nav .link:focus {
     align-items: center;
     justify-content: center;
 
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .masters-soc-icon {
     fill:#AFB1B8;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus {
@@ -478,9 +472,8 @@ fill: var(--primary-bg-color);
     align-items: center;
     justify-content: center;
 
-    transition-property:border-color;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -498,11 +491,7 @@ border-color: var(--accent-color);
 .clients-icon {
     fill: #AFB1B8;
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
-    
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -550,10 +539,11 @@ border-color: var(--accent-color);
     text-align: center;
     letter-spacing: 0.03em;
      
-    transition-property:background-color,
-    color,box-shadow,border-radius;
-        transition-duration: 250ms;
-        transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .page-list {
@@ -580,9 +570,12 @@ border-color: var(--accent-color);
     text-decoration: none; 
     margin-bottom: 30px;
 
-    transition-property: color, box-shadow, background-color, opacity;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .project-tumb {
 position: relative;
@@ -601,7 +594,16 @@ position: relative;
     font-size: 18px;
     line-height: 1.56;
     opacity: 0;
+    
+    transform: translateY(50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+.item-page:hover .project-tumb-text {
+    transform: translateY(0);
+    
+}
+
 .page-link:hover .project-tumb-text,
  .page-link:hover .project-tumb,
  .page-link:focus .project-tumb-text,
@@ -609,6 +611,7 @@ position: relative;
     opacity: 1;
     
     background-color: rgba(33, 150, 243, 0.9);
+
   
 }
 
@@ -690,9 +693,8 @@ margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.71;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .mail:hover,
